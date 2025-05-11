@@ -140,3 +140,16 @@ body {
   background-color: #5a35a1;
   transform: scale(1.05);
 }
+
+/* ===== Fullscreen Background Image with Transparency ===== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/baseball.jpeg') no-repeat center center/cover;
+  opacity: 0.5; /* 50% transparent */
+  z-index: -1;
+}
